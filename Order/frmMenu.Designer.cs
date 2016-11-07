@@ -48,7 +48,7 @@
             this.btnOk.Location = new System.Drawing.Point(127, 288);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
-            this.btnOk.TabIndex = 0;
+            this.btnOk.TabIndex = 5;
             this.btnOk.Text = "&OK";
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
@@ -59,7 +59,7 @@
             this.btnCancel.Location = new System.Drawing.Point(208, 288);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 1;
+            this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
@@ -71,7 +71,7 @@
             this.chkDefault.Location = new System.Drawing.Point(12, 264);
             this.chkDefault.Name = "chkDefault";
             this.chkDefault.Size = new System.Drawing.Size(111, 17);
-            this.chkDefault.TabIndex = 2;
+            this.chkDefault.TabIndex = 4;
             this.chkDefault.Text = "Save Preferences";
             this.chkDefault.UseVisualStyleBackColor = true;
             // 
@@ -82,7 +82,7 @@
             this.cboSide.Location = new System.Drawing.Point(43, 223);
             this.cboSide.Name = "cboSide";
             this.cboSide.Size = new System.Drawing.Size(121, 21);
-            this.cboSide.TabIndex = 3;
+            this.cboSide.TabIndex = 2;
             // 
             // cboDessert
             // 
@@ -91,14 +91,14 @@
             this.cboDessert.Location = new System.Drawing.Point(243, 223);
             this.cboDessert.Name = "cboDessert";
             this.cboDessert.Size = new System.Drawing.Size(121, 21);
-            this.cboDessert.TabIndex = 4;
+            this.cboDessert.TabIndex = 3;
             // 
             // txtCookingInstructions
             // 
             this.txtCookingInstructions.Location = new System.Drawing.Point(127, 192);
             this.txtCookingInstructions.Name = "txtCookingInstructions";
             this.txtCookingInstructions.Size = new System.Drawing.Size(237, 20);
-            this.txtCookingInstructions.TabIndex = 5;
+            this.txtCookingInstructions.TabIndex = 1;
             // 
             // label1
             // 
@@ -133,7 +133,7 @@
             this.lstItem.Location = new System.Drawing.Point(98, 50);
             this.lstItem.Name = "lstItem";
             this.lstItem.Size = new System.Drawing.Size(266, 121);
-            this.lstItem.TabIndex = 9;
+            this.lstItem.TabIndex = 0;
             // 
             // rdoToGo
             // 

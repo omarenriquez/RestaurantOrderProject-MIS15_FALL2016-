@@ -133,8 +133,17 @@ namespace Order
                 msg += "Side: " + cboSide.Text + "\n\n";
             }
 
-            bool isDefaultOrder = chkDefault.Checked;
-            msg += "Default Order: Yes ";
+            if (chkDefault.Checked)
+            {
+                bool isDefaultOrder = chkDefault.Checked;
+                msg += "Default Order: Yes ";
+            }
+
+            if (chkDefault.Checked == false)
+            {
+                bool isDefaultOrder = chkDefault.Checked;
+                msg += "Default Order: No ";
+            }
 
             this.Tag = msg;
             this.DialogResult = DialogResult.OK;

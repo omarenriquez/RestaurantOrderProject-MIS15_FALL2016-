@@ -88,7 +88,7 @@
             this.btnSelectItem.Location = new System.Drawing.Point(244, 99);
             this.btnSelectItem.Name = "btnSelectItem";
             this.btnSelectItem.Size = new System.Drawing.Size(75, 23);
-            this.btnSelectItem.TabIndex = 5;
+            this.btnSelectItem.TabIndex = 2;
             this.btnSelectItem.Text = "Select Item";
             this.btnSelectItem.UseVisualStyleBackColor = true;
             this.btnSelectItem.Click += new System.EventHandler(this.btnSelectItem_Click_1);
@@ -100,7 +100,7 @@
             this.cboTable.Location = new System.Drawing.Point(61, 25);
             this.cboTable.Name = "cboTable";
             this.cboTable.Size = new System.Drawing.Size(121, 21);
-            this.cboTable.TabIndex = 6;
+            this.cboTable.TabIndex = 0;
             // 
             // frmOrder
             // 
