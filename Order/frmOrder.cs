@@ -17,9 +17,9 @@ namespace Order
             InitializeComponent();
         }
 
-        bool isDataSaved = false;
+        bool isDataSaved = true;
 
-        private void frmOrder_Load(object sender, EventArgs e)
+        private void frmOrder_Load(object sender, System.EventArgs e)
         {
             cboTable.Items.Add("Blue");
             cboTable.Items.Add("Green");
@@ -28,12 +28,12 @@ namespace Order
             cboTable.Items.Add("Gray");
         }
 
-        private void DataChanged(Object sender, EventArgs e)
+        private void DataChanged(Object sender, System.EventArgs e)
         {
             isDataSaved = false;
         }
 
-        private void btnSelectItem_Click_1(object sender, EventArgs e)
+        private void btnSelectItem_Click_1(object sender, System.EventArgs e)
         {
             Form menuForm = new frmMenu();
             DialogResult selectedButton = menuForm.ShowDialog();
@@ -41,9 +41,9 @@ namespace Order
             {
                 lblOrder.Text = (string)menuForm.Tag;
             }
-        }
+        }  
 
-        private void btnSave_Click_1(object sender, EventArgs e)
+        private void btnSave_Click_1(object sender, System.EventArgs e)
         {
             if (IsValidData())
             {
@@ -75,12 +75,12 @@ namespace Order
             return true;
         }
 
-        private void btnExit_Click_1(object sender, EventArgs e)
+        private void btnExit_Click_1(object sender, System.EventArgs e)
         {
             this.Close();
         }
 
-        private void frmOrder_FormClosing(object sender, FormClosingEventArgs e)
+        private void frmOrder_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             if (isDataSaved == false)
             {

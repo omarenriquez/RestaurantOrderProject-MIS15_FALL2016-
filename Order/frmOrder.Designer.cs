@@ -62,6 +62,7 @@
             this.lblOrder.Name = "lblOrder";
             this.lblOrder.Size = new System.Drawing.Size(226, 227);
             this.lblOrder.TabIndex = 2;
+            this.lblOrder.TextChanged += new System.EventHandler(this.DataChanged);
             // 
             // btnSave
             // 
@@ -71,6 +72,7 @@
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // btnExit
             // 
@@ -101,6 +103,7 @@
             this.cboTable.Name = "cboTable";
             this.cboTable.Size = new System.Drawing.Size(121, 21);
             this.cboTable.TabIndex = 0;
+            this.cboTable.SelectedIndexChanged += new System.EventHandler(this.DataChanged);
             // 
             // frmOrder
             // 
