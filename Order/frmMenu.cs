@@ -45,7 +45,7 @@ namespace Order
 
         private bool IsValidData()
         {
-            if (rdoEatIn.Checked)
+            if (rdoEatIn.Checked == true || rdoToGo.Checked == true)
             {
                 if (lstItem.SelectedIndex == -1)
                 {
@@ -74,39 +74,17 @@ namespace Order
                     cboSide.Focus();
                     return false;
                 }
+                return true;
             }
 
-            if (rdoToGo.Checked)
+            if (rdoEatIn.Checked == false && rdoToGo.Checked == false)
             {
-                if (lstItem.SelectedIndex == -1)
-                {
-                    MessageBox.Show("You must select an item to order.", "Entry Error");
-                    lstItem.Focus();
-                    return false;
-                }
-
-                if (txtCookingInstructions.Text == "")
-                {
-                    MessageBox.Show("you must enter cooking instructions, enter NONE if you have no cooking instructions", "Entry Error");
-                    txtCookingInstructions.Focus();
-                    return false;
-                }
-
-                if (cboDessert.SelectedIndex == -1)
-                {
-                    MessageBox.Show("You must select a dessert.", "Entry Error");
-                    cboDessert.Focus();
-                    return false;
-                }
-
-                if (cboSide.SelectedIndex == -1)
-                {
-                    MessageBox.Show("You must select a side.", "Entry Error");
-                    cboSide.Focus();
-                    return false;
-                }
+                MessageBox.Show("You must select To Go or Eat In");
+                rdoToGo.Focus();
+                return false;
             }
             return true;
+
         }
 
         private void SaveData()
@@ -133,18 +111,10 @@ namespace Order
                 msg += "Side: " + cboSide.Text + "\n\n";
             }
 
-            if (chkDefault.Checked)
-            {
-                bool isDefaultOrder = chkDefault.Checked;
-                msg += "Default Order: Yes ";
-            }
-
-            if (chkDefault.Checked == false)
-            {
-                bool isDefaultOrder = chkDefault.Checked;
-                msg += "Default Order: No ";
-            }
-
+            
+            bool isDefaultOrder = chkDefault.Checked;
+            msg += "Default Order: " + isDefaultOrder;
+            
             this.Tag = msg;
             this.DialogResult = DialogResult.OK;
         }

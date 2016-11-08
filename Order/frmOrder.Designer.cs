@@ -121,6 +121,7 @@
             this.Name = "frmOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Order";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmOrder_FormClosing_1);
             this.Load += new System.EventHandler(this.frmOrder_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

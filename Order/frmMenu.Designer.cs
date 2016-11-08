@@ -138,12 +138,10 @@
             // rdoToGo
             // 
             this.rdoToGo.AutoSize = true;
-            this.rdoToGo.Checked = true;
             this.rdoToGo.Location = new System.Drawing.Point(127, 12);
             this.rdoToGo.Name = "rdoToGo";
             this.rdoToGo.Size = new System.Drawing.Size(55, 17);
             this.rdoToGo.TabIndex = 10;
-            this.rdoToGo.TabStop = true;
             this.rdoToGo.Text = "To Go";
             this.rdoToGo.UseVisualStyleBackColor = true;
             // 
@@ -154,7 +152,6 @@
             this.rdoEatIn.Name = "rdoEatIn";
             this.rdoEatIn.Size = new System.Drawing.Size(53, 17);
             this.rdoEatIn.TabIndex = 11;
-            this.rdoEatIn.TabStop = true;
             this.rdoEatIn.Text = "Eat In";
             this.rdoEatIn.UseVisualStyleBackColor = true;
             // 
